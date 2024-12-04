@@ -2,7 +2,6 @@ function createFrame(names) {
   //Encontrar el nombre mas largo
   const nombreMasLargo =  names.reduce((a,b)=> a.length > b.length ? a : b) 
   const anchoDeMarco = nombreMasLargo.length + 4
-  console.log(anchoDeMarco)
   //creo la linea
   const linea = anchoDeMarco >= 0 ?'*'.repeat(anchoDeMarco) : '' //Consigo la linea de por arriba y por abajo
     
@@ -13,7 +12,3 @@ function createFrame(names) {
 
   return marcoCompleto
   }
-
-  const misNombres = ["a","bb","ccc","dddd"]
-const cuadro = createFrame(misNombres)
-console.log(cuadro)
